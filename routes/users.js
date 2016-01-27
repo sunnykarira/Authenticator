@@ -46,6 +46,7 @@ router.post('/register', function (req, res,next){
 	}
 
 	//Form Validation
+	// Value and error
 	req.checkBody('name', 'Name field is required').notEmpty();
 	req.checkBody('email', 'Email field is required').notEmpty();
 	req.checkBody('email', 'Email not valid').isEmail();
