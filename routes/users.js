@@ -35,7 +35,7 @@ router.post('/register', function (req, res,next){
 
 		//Check for image field
 	if(req.files.profileimage){
-		console.log('Uploadin file...');
+		console.log('Uploading file...');
 		//Getting file info
 		var profileImageOriginalName = req.files.profileimage.originalname;
 		var profileImageName = req.files.profileimage.name;
